@@ -6,5 +6,12 @@
         "visibility": "private",
         "path": "D:\\Users\\marco\\Documents\\GitHub\\DPHT_demo",
         "remote": null
+    },{
+        "id": "dd58a724-7b7f-4cc1-a8e4-384d826298e2",
+        "name": "Folder group",
+        "mode": "group",
+        "visibility": "public",
+        "path": "D:\\Users\\marco\\Documents\\GitHub\\DPHT_demo",
+        "remote": null
     }]
 }

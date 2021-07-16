@@ -25,6 +25,8 @@
             <mat-list-item *ngFor="let folder of folders" routerLink="./{{folder.id}}">
                 <i *ngIf="folder.visibility === 'private'" class="fa fa-fw fa-lock"></i>
                 <i *ngIf="folder.visibility !== 'private'" class="fa fa-fw fa-globe"></i>
+                <i *ngIf="folder.mode === 'single'" class="fa fa-fw fa-user"></i>
+                <i *ngIf="folder.mode === 'group'" class="fa fa-fw fa-user-friends"></i>
                 {{folder.name}}
             </mat-list-item>
         </mat-list>
