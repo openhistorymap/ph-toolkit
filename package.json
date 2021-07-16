@@ -61,14 +61,16 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@jsonforms/angular": "2.5.2",
     "@jsonforms/angular-material": "2.5.2",
+    "@ngx-formly/core": "^5.0.0",
+    "@ngx-formly/material": "^5.0.0",
+    "electron-deeplink": "1.0.6",
     "http-browserify": "1.7.0",
     "https-browserify": "1.0.0",
+    "octokit": "1.1.0",
     "rxjs": "6.6.6",
     "stream-http": "3.2.0",
     "tslib": "2.1.0",
-    "zone.js": "~0.11.4",
-    "@ngx-formly/core": "^5.0.0",
-    "@ngx-formly/material": "^5.0.0"
+    "zone.js": "~0.11.4"
   },
   "devDependencies": {
     "@angular-builders/custom-webpack": "12.0.0",

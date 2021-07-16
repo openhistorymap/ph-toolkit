@@ -1,5 +1,5 @@
 export const APP_CONFIG = {
   production: true,
-  name: "OHM Public History Toolkit",
+  name: "OHM DPH Toolkit",
   environment: 'PROD'
 };

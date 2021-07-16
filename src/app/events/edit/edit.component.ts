@@ -18,6 +18,7 @@ export class EditComponent implements OnInit {
   model: any;
   options: FormlyFormOptions;
   fields: FormlyFieldConfig[];
+  loaded = false;
 
   type: string;
 
@@ -36,9 +37,10 @@ export class EditComponent implements OnInit {
           this.type = name;
           this.options = {};
           this.fields = [this.formlyJsonschema.toFieldConfig(x.schema)];
-          this.model = x.model;
         })
-      ).subscribe();
+      ).subscribe(x => {
+        this.loaded = true;
+      });
     }); 
   }
 }

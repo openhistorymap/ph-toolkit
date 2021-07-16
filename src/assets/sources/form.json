@@ -1,46 +1,22 @@
 {
   "schema": {
-    "title": "A registration form",
-    "description": "A simple form example.",
+    "title": "Source Material",
+    "description": "Descriptor for Source Material",
     "type": "object",
     "required": [
-      "firstName",
-      "lastName"
+      "identifier",
+      "name"
     ],
     "properties": {
-      "firstName": {
+      "identifier": {
         "type": "string",
-        "title": "First name",
-        "default": "Chuck"
+        "title": "Identifier"
       },
-      "lastName": {
+      "name": {
         "type": "string",
-        "title": "Last name"
-      },
-      "age": {
-        "type": "integer",
-        "title": "Age"
-      },
-      "bio": {
-        "type": "string",
-        "title": "Bio"
-      },
-      "password": {
-        "type": "string",
-        "title": "Password",
-        "minLength": 3
-      },
-      "telephone": {
-        "type": "string",
-        "title": "Telephone",
-        "minLength": 10
+        "title": "Name"
       }
     }
   },
-  "model": {
-    "lastName": "Norris",
-    "age": 75,
-    "bio": "Roundhouse kicking asses since 1940",
-    "password": "noneed"
-  }
+  "model": {}
 }

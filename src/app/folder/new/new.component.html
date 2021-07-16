@@ -1,0 +1,28 @@
+<mat-toolbar color="primary">
+    <button mat-icon-button (click)="infoside.toggle()  "><mat-icon>menu</mat-icon></button>
+    <span class="title">{{title}}</span>
+    <span class="spacer"></span>
+
+    <span class="spacer"></span>
+    <button mat-button  [matMenuTriggerFor]="menu">Marco Montanari</button>
+    <!--<button mat-icon-button (click)="chatside.toggle()  "><mat-icon matBadge="15" matBadgeColor="warn">chat</mat-icon></button>-->
+
+</mat-toolbar>
+
+<mat-menu #menu="matMenu">
+    <button mat-menu-item routerLink="/auth/user">Profile</button>
+    <button mat-menu-item>Logout</button>
+  </mat-menu>
+
+
+  <mat-sidenav-container  class="example-container" >
+    <mat-sidenav class="sidechat" #chatside mode="side" position="end" opened>
+      <ohm-pht-chat></ohm-pht-chat>
+    </mat-sidenav>
+    <mat-sidenav class="sidechat" #infoside mode="over" >Sidenav content</mat-sidenav>
+    <mat-sidenav-content>
+        
+        
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  

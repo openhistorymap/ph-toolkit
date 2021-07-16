@@ -5,12 +5,22 @@ import { SharedModule } from '../shared/shared.module';
 import { RouterModule } from '@angular/router';
 import { FolderRoutingModule } from './folder-routing.module';
 import { ChatModule } from '../chat/chat.module';
+import { WrapperComponent } from './wrapper/wrapper.component';
+import { NewComponent } from './new/new.component';
+import { ListComponent } from './list/list.component';
+import { ToolbarComponent } from './toolbar/toolbar.component';
+import { ActivitiesComponent } from './activities/activities.component';
 
 
 
 @NgModule({
   declarations: [
-    MainComponent
+    MainComponent,
+    WrapperComponent,
+    NewComponent,
+    ListComponent,
+    ToolbarComponent,
+    ActivitiesComponent
   ],
   imports: [
     CommonModule,

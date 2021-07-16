@@ -13,6 +13,7 @@ import { FormlyMaterialModule } from '@ngx-formly/material';
 import { ObjectTypeComponent } from './components/object-type.component';
 import { ArrayTypeComponent } from './components/array-type.component';
 import { MultiSchemaTypeComponent } from './components/mutischema-type.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [PageNotFoundComponent, WebviewDirective],
@@ -51,7 +52,8 @@ import { MultiSchemaTypeComponent } from './components/mutischema-type.component
         { name: 'multischema', component: MultiSchemaTypeComponent },
       ]
     }), 
-    FormlyMaterialModule  
+    FormlyMaterialModule,
+    FontAwesomeModule
   ],
   exports: [
     TranslateModule, 
@@ -60,7 +62,8 @@ import { MultiSchemaTypeComponent } from './components/mutischema-type.component
     MaterialModule,
     ReactiveFormsModule,
     FormlyModule, 
-    FormlyMaterialModule 
+    FormlyMaterialModule,
+    FontAwesomeModule
   ]
 })
 export class SharedModule {}

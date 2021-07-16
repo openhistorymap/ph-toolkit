@@ -18,6 +18,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FormlyModule } from '@ngx-formly/core';
 import { FormlyMaterialModule } from '@ngx-formly/material';
 import { ChatModule } from './chat/chat.module';
+import { UserModule } from './user/user.module';
 
 // AoT requires an exported function for factories
 const httpLoaderFactory = (http: HttpClient): TranslateHttpLoader =>  new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -45,6 +46,7 @@ const httpLoaderFactory = (http: HttpClient): TranslateHttpLoader =>  new Transl
     FormlyModule.forRoot({ extras: { lazyRender: true } }),
     FormlyMaterialModule,
     ChatModule,
+    UserModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
