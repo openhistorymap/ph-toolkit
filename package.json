@@ -63,6 +63,8 @@
     "@jsonforms/angular-material": "2.5.2",
     "@ngx-formly/core": "^5.0.0",
     "@ngx-formly/material": "^5.0.0",
+    "@octokit/auth-oauth-device": "3.1.2",
+    "@octokit/core": "3.5.1",
     "electron-deeplink": "1.0.6",
     "http-browserify": "1.7.0",
     "https-browserify": "1.0.0",

@@ -16,13 +16,17 @@
 
 
   <mat-sidenav-container  class="example-container" >
-    <mat-sidenav class="sidechat" #chatside mode="side" position="end" opened>
-      <ohm-pht-chat></ohm-pht-chat>
-    </mat-sidenav>
     <mat-sidenav class="sidechat" #infoside mode="over" >Sidenav content</mat-sidenav>
     <mat-sidenav-content>
-        
-        
+        <form (ngSubmit)="subitNew">
+            <div class="content">
+            </div>
+            <mat-toolbar>
+                <span class="spacer"></span>
+                <button type="submit" mat-button>Save</button>
+                <button routerLink="/folder" mat-button>Cancel</button>
+            </mat-toolbar>
+        </form>
     </mat-sidenav-content>
   </mat-sidenav-container>
   

@@ -1,6 +1,7 @@
 {
     "folders": [{
         "id": "ad63cf0b-8f88-4b91-a430-897c2bc955e7",
+        "created": "2021-07-17",
         "name": "Folder 123",
         "mode": "single",
         "visibility": "private",
@@ -8,6 +9,7 @@
         "remote": null
     },{
         "id": "dd58a724-7b7f-4cc1-a8e4-384d826298e2",
+        "created": "2021-07-18",
         "name": "Folder group",
         "mode": "group",
         "visibility": "public",

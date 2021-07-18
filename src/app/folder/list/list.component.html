@@ -16,20 +16,30 @@
   <button mat-menu-item>Logout</button>
 </mat-menu>
 
-
 <mat-sidenav-container class="example-container">
-  <mat-sidenav class="sidechat" #infoside mode="over">
-    <button mat-button routerLink="..">Back</button>
-  </mat-sidenav>
+    <mat-sidenav class="sidechat" #infoside mode="over">
+        <mat-nav-list>
+            <a mat-list-item routerLink="/folder/new">New Folder</a>
+        </mat-nav-list>
+    </mat-sidenav>
   <mat-sidenav-content>
 
+    <mat-toolbar>
+        <button mat-icon-button>add</button>
+        <span class="spacer"></span>
+        <button mat-icon-button>filter</button>
+    </mat-toolbar>
     <mat-list>
       <mat-list-item *ngFor="let folder of folders" routerLink="./{{folder.id}}">
-        <i *ngIf="folder.visibility === 'private'" class="fa fa-fw fa-lock"></i>
+        <h3 matLine><i *ngIf="folder.visibility === 'private'" class="fa fa-fw fa-lock"></i>
         <i *ngIf="folder.visibility !== 'private'" class="fa fa-fw fa-globe"></i>
         <i *ngIf="folder.mode === 'single'" class="fa fa-fw fa-user"></i>
         <i *ngIf="folder.mode === 'group'" class="fa fa-fw fa-user-friends"></i>
-        {{folder.name}}
+        {{folder.name}}</h3>
+        <span matLine>{{folder.created}}</span>
+        <span matLine>{{folder.area}}</span>
+        
+        
       </mat-list-item>
     </mat-list>
   </mat-sidenav-content>

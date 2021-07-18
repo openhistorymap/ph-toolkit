@@ -1,1 +1,15 @@
-<p>detail works!</p>
+<mat-toolbar color="primary">
+    <button mat-icon-button><mat-icon>add</mat-icon></button>
+</mat-toolbar>
+
+<div *ngIf="loaded" >
+    <mat-toolbar color="primary">
+        <span class="spacer"></span>
+        <button mat-button [disabled]="!form.valid" type="submit">save</button>
+        <button mat-button >cancel</button>
+    </mat-toolbar>
+    <form disabled [formGroup]="form" (ngSubmit)="submit()" *ngIf="fields">
+        <formly-form [model]="model" [fields]="fields" [options]="options" [form]="form"></formly-form>
+    </form>
+</div>
+  
