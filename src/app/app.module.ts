@@ -20,7 +20,7 @@ import { FormlyMaterialModule } from '@ngx-formly/material';
 import { ChatModule } from './chat/chat.module';
 import { UserModule } from './user/user.module';
 
-// AoT requires an exported function for factories
+// AoT requires an ed function for factories
 const httpLoaderFactory = (http: HttpClient): TranslateHttpLoader =>  new TranslateHttpLoader(http, './assets/i18n/', '.json');
 
 @NgModule({
@@ -51,4 +51,5 @@ const httpLoaderFactory = (http: HttpClient): TranslateHttpLoader =>  new Transl
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule {
+}
